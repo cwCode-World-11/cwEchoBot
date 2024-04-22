@@ -1,0 +1,42 @@
+1. create bot and copy token on telegram(bot father)
+
+// in my computer
+
+2. npm init
+
+/* 
+    why we use "npm init" because node.js is server
+    side scripting language , package.json is neccessary
+    to run the file .
+
+    "node modules" folder is optional if your using third party
+    library or other packages , it will appear on same directory.
+    And it add on package.json(package name).
+
+
+    if i run my node.js file , i am the server . basically node.js is
+    server side scripting language right.
+
+    so basically telegram server and my server are communicating with 
+    each other.
+
+    "Telegraf" library is easy to link with telegram and other stuff.
+*/
+
+3. run this command "npm i telegraf"
+
+4. import the class of telegraf 
+//const { Telegraf } = require("telegraf");
+
+5. And paste the token as a constructor
+//const bot = new Telegraf("7126722358:AAEwnN3Pr71y6TCHS1jXh7yWyqa9wIshRx4");
+
+/*
+    ".on()" method is fire a event(action , opening file , clicking)
+    basically addEventListener in javascript
+
+    ".emit()" method is creating own event.
+*/
+
+6. launch the bot "bot.launch()"
+//now our bot is on live . use and enjoy our bot.
