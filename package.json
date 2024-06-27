@@ -1,14 +1,16 @@
 {
-  "name": "cwechotbot",
+  "name": "starter-template",
   "version": "1.0.0",
-  "description": "Deploy In Appwrite (Echo bot)",
-  "main": "index.js",
+  "description": "",
+  "main": "src/main.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "format": "prettier --write ."
   },
-  "author": "Rajanstark",
-  "license": "ISC",
   "dependencies": {
-    "telegraf": "^4.16.3"
+    "node-appwrite": "^12.0.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.5"
   }
 }
