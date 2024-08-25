@@ -7,8 +7,18 @@ const bot = new Telegraf("7126722358:AAEwnN3Pr71y6TCHS1jXh7yWyqa9wIshRx4");
 
 const express = require("express")
 const app = express();
-app.get("/",(req,res)=>res.send("<h1>Hello World!</h1><h2>Open Your browser console.log</h2>"));
-app.listen(3000,()=>console.log("Server is listening!!!"))
+app.use(express.json())
+// app.get("/",(req,res)=>res.send("<h1>Hello World!</h1><h2>Open Your browser console.log</h2>"));
+app.get("*",(req,res)=>res.send("<h1>Hello World! In GET Mathod</h1><h2>Open Your browser console.log</h2>"));
+app.post("*",(req,res)=>res.send("<h1>Hello World! In POST Mathod</h1><h2>Open Your browser console.log</h2>"));
+app.listen(3000,(err)=>{
+	if(err){
+		console.log(err);
+		alert(err);
+		return;
+	} 
+	console.log("Server is listening!!!")
+})
 
 
 
